@@ -1,47 +1,40 @@
-# Smart Closet AI – الخزانة الذكية 🧠👗
+# 👗 Smart Closet AI
 
-Smart Closet AI is a premium, full-stack AI-powered wardrobe system. Organize your clothes, get weather-aware outfit suggestions, and discover the perfect color harmonies for your style.
-
-## 🚀 Key Features
-- **Smart Closet:** Add items via AI image recognition (Auto-tagging category/color).
-- **Hybrid AI Engine:** Recommendation system combining ML-based user preferences with rule-based styling logic.
-- **Weather-Aware:** suggestions adapted to your local temperature and conditions.
-- **Cross-Platform:** Available as a Responsive Web App (Next.js) and Mobile App (Flutter).
-- **Continuous Learning:** The system learns from your liked and rejected outfits to improve over time.
-
-## 🛠️ Technical Stack
-- **Backend:** FastAPI (Python), PostgreSQL, SQLAlchemy, JWT Auth.
-- **Frontend (Web):** Next.js 14, Tailwind CSS, Framer Motion.
-- **Mobile:** Flutter (Dart) with BLoC Architecture.
-- **AI Layers:** YOLOv8 (Recognition), CLIP (Similarity), Custom Hybrid Engine.
-
-## 📂 Project Structure
-```text
-Smart Closet AI/
-├── backend/            # FastAPI REST API
-│   ├── app/            # Core logic, models, routes
-│   └── requirements.txt
-├── frontend/           # React/Next.js Web Application
-│   ├── src/            # Components, pages, styles
-│   └── package.json
-├── mobile/             # Flutter Mobile Application
-└── docs/               # API & Architectural Documentation
-```
-
-## ⚙️ Installation & Setup
-
-### 1. Backend Setup
-1. Navigate to `backend/`
-2. Create a virtual environment: `python -m venv venv`
-3. Activate it: `source venv/bin/activate` (Mac/Linux) or `.\venv\Scripts\activate` (Windows)
-4. Install dependencies: `pip install -r requirements.txt`
-5. Run the server: `uvicorn app.main:app --reload`
-
-### 2. Frontend Setup
-1. Navigate to `frontend/`
-2. Install dependencies: `npm install`
-3. Start the dev server: `npm run dev`
+**Smart Closet AI** is a cutting-edge, full-stack application designed to revolutionize how you manage your wardrobe. Using AI and real-time data, it helps you organize your clothes and suggests the perfect outfit for any weather.
 
 ---
 
-Built with ❤️ by Antigravity AI
+## ✨ Key Features | المميزات الرئيسية
+
+*   🌍 **Bilingual Support (AR/EN):** Full support for Arabic and English with seamless RTL/LTR switching.
+*   🌙 **Dark Mode:** A sleek, premium dark interface for comfortable night use.
+*   🌤️ **Real-time Weather Sync:** Integrated with OpenWeatherMap to suggest outfits based on your current location (e.g., Aden, Sana'a).
+*   📱 **Multi-Platform:** Fully functional Web application (React) and Android application (Flutter).
+*   🤖 **AI Recommendations:** Smart algorithms to help you decide what to wear.
+
+---
+
+## 🚀 Tech Stack | التقنيات المستخدمة
+
+*   **Backend:** FastAPI (Python), SQLAlchemy, SQLite, Pydantic.
+*   **Frontend:** React.js, Vite, Tailwind CSS, Framer Motion.
+*   **Mobile:** Flutter (Dart), Lucide Icons.
+*   **Weather API:** OpenWeatherMap.
+
+---
+
+## 🛠️ How to Run | كيفية التشغيل
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/USERNAME/Smart-Closet-AI.git
+    ```
+2.  **Run with one click:**
+    Just double-click on `START_APP.bat` in the root folder to launch both Backend and Frontend.
+3.  **For Mobile:**
+    Go to `mobile` folder and run `flutter run`.
+
+---
+
+## 📝 License
+Created by Antigravity AI for a premium wardrobe experience.
