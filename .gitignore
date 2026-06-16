@@ -9,6 +9,9 @@ backend/__pycache__/
 backend/*.pyc
 backend/.env
 backend/database.db
+backend/smart_closet.db
+backend/uploads/*
+!backend/uploads/.gitkeep
 
 # Mobile
 mobile/.dart_tool/

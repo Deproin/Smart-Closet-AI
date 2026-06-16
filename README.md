@@ -36,5 +36,35 @@
 
 ---
 
+---
+
+## 🚀 Other Major Projects | مشاريع كبرى أخرى
+
+### 🎙️ Nobdah (نبضة)
+*   **Tech Stack:** Flutter, Python (Custom WebSockets), WebRTC.
+*   **Description:** High-speed random voice chat app with a focus on privacy and real-time pairing.
+
+### 🚛 Waitek (وايتك)
+*   **Tech Stack:** Flutter, FastAPI, PostgreSQL, Google Maps API.
+*   **Description:** Logistics platform for water delivery with real-time truck tracking and driver management.
+
+### 💼 Kifah (كفاح)
+*   **Tech Stack:** Laravel, MySQL, Intelligent Matchmaking Algorithms.
+*   **Description:** AI-powered recruitment platform matching job seekers with employers based on real-time data.
+
+### 🏥 Medical Clinic Management System
+*   **Tech Stack:** C#, .NET Framework, RBAC Security.
+*   **Description:** Desktop-based system for patient records and scheduling with advanced data protection.
+
+### 🦷 Teeth Health Monitoring Website
+*   **Tech Stack:** HTML5, CSS3, JavaScript.
+*   **Description:** Interactive web portal for monitoring and archiving dental hygiene status.
+
+---
+## 🛠️ Global Development Tools
+*   **CI/CD:** GitHub Actions (Automated Flutter Builds).
+*   **AI/ML:** YOLO, CLIP, Custom Matching Algorithms.
+*   **Databases:** PostgreSQL, MySQL, SQLite.
+
 ## 📝 License
-Created by Antigravity AI for a premium wardrobe experience.
+Developed with passion by Deproin. All rights reserved.
