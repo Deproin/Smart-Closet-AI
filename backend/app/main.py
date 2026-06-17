@@ -83,9 +83,10 @@ if not os.path.exists(UPLOAD_DIR):
 app.mount("/uploads", StaticFiles(directory=UPLOAD_DIR), name="uploads")
 
 # Include routers
-app.include_router(auth_router.router, prefix="/api/auth", tags=["auth"]) # Added prefix for better structure
-app.include_router(items.router, prefix="/api/items", tags=["items"])
-app.include_router(ai.router, prefix="/api/ai", tags=["ai"])
+# Note: prefixes are already defined inside each router file
+app.include_router(auth_router.router)
+app.include_router(items.router)
+app.include_router(ai.router)
 
 @app.get("/")
 def read_root():
