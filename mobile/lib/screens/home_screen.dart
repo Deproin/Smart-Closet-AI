@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:flutter_lucide/flutter_lucide.dart';
 import '../main.dart';
 import '../translations.dart';
 
@@ -46,7 +46,7 @@ class _ModernHomeScreenState extends State<ModernHomeScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            _buildNavItem(0, LucideIcons.home, AppTranslations.t(context, 'home')),
+            _buildNavItem(0, LucideIcons.house, AppTranslations.t(context, 'home')),
             _buildNavItem(1, LucideIcons.shirt, AppTranslations.t(context, 'closet')),
             _buildNavItem(2, LucideIcons.sparkles, AppTranslations.t(context, 'aiMagic')),
             _buildNavItem(3, LucideIcons.user, AppTranslations.t(context, 'profile')),
@@ -73,7 +73,7 @@ class _ModernHomeScreenState extends State<ModernHomeScreen> {
           children: [
             Icon(
               icon,
-              color: isSelected ? primaryColor : Colors.slate[400],
+              color: isSelected ? primaryColor : Colors.blueGrey[400],
               size: 24,
             ),
             if (isSelected) ...[
@@ -117,7 +117,7 @@ class HomeView extends StatelessWidget {
                     AppTranslations.t(context, 'welcome'),
                     style: GoogleFonts.outfit(
                       fontSize: 16,
-                      color: Colors.slate[500],
+                      color: Colors.blueGrey[500],
                     ),
                   ),
                   Text(
@@ -125,7 +125,7 @@ class HomeView extends StatelessWidget {
                     style: GoogleFonts.outfit(
                       fontSize: 28,
                       fontWeight: FontWeight.w800,
-                      color: isDark ? Colors.white : Colors.slate[900],
+                      color: isDark ? Colors.white : Colors.blueGrey[900],
                     ),
                   ),
                 ],
@@ -173,7 +173,7 @@ class HomeView extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        const Icon(LucideIcons.cloudSun, color: Colors.white, size: 40),
+                        const Icon(LucideIcons.cloud_sun, color: Colors.white, size: 40),
                         const SizedBox(width: 16),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -198,7 +198,7 @@ class HomeView extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(isAr ? LucideIcons.arrowUpLeft : LucideIcons.arrowUpRight, color: Colors.white),
+                    Icon(isAr ? LucideIcons.arrow_up_left : LucideIcons.arrow_up_right, color: Colors.white),
                   ],
                 ),
               ],
@@ -210,7 +210,7 @@ class HomeView extends StatelessWidget {
             style: GoogleFonts.outfit(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: isDark ? Colors.white : Colors.slate[800],
+              color: isDark ? Colors.white : Colors.blueGrey[800],
             ),
           ),
           const SizedBox(height: 16),
@@ -228,7 +228,7 @@ class HomeView extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: isDark ? const Color(0xFF1E293B) : Colors.white,
                     borderRadius: BorderRadius.circular(24),
-                    border: Border.all(color: isDark ? Colors.slate[800]! : Colors.slate[100]!),
+                    border: Border.all(color: isDark ? Colors.blueGrey[800]! : Colors.blueGrey[100]!),
                   ),
                   child: Column(
                     children: [
@@ -236,7 +236,7 @@ class HomeView extends StatelessWidget {
                         child: Container(
                           margin: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            color: isDark ? const Color(0xFF0F172A) : Colors.slate[50],
+                            color: isDark ? const Color(0xFF0F172A) : Colors.blueGrey[50],
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: const Center(child: Icon(LucideIcons.image, color: Color(0xFFE2E8F0))),
@@ -250,11 +250,11 @@ class HomeView extends StatelessWidget {
                           children: [
                             Text(
                               isAr ? "قميص كاجوال" : "Casual Shirt", 
-                              style: TextStyle(fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.slate[900])
+                              style: TextStyle(fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.blueGrey[900])
                             ),
                             Text(
                               isAr ? "أزرق" : "Blue", 
-                              style: TextStyle(color: Colors.slate[400], fontSize: 12, fontWeight: FontWeight.bold)
+                              style: TextStyle(color: Colors.blueGrey[400], fontSize: 12, fontWeight: FontWeight.bold)
                             ),
                           ],
                         ),

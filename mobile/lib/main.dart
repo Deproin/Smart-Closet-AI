@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/home_screen.dart';
+import 'screens/login_screen.dart';
 
-void main() {
-  runApp(const SmartClosetApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  final bool isLoggedIn = prefs.getString('token') != null;
+  runApp(SmartClosetApp(isLoggedIn: isLoggedIn));
 }
 
 class SmartClosetApp extends StatefulWidget {
-  const SmartClosetApp({super.key});
+  final bool isLoggedIn;
+  const SmartClosetApp({super.key, required this.isLoggedIn});
 
   static _SmartClosetAppState of(BuildContext context) =>
       context.findAncestorStateOfType<_SmartClosetAppState>()!;
@@ -51,7 +57,7 @@ class _SmartClosetAppState extends State<SmartClosetApp> {
         ),
         textTheme: GoogleFonts.outfitTextTheme(ThemeData.dark().textTheme),
       ),
-      home: const ModernHomeScreen(),
+      home: widget.isLoggedIn ? const ModernHomeScreen() : const LoginScreen(),
     );
   }
 }

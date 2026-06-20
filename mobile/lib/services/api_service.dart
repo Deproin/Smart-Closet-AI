@@ -3,10 +3,17 @@ import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiService {
+  // Use this for Android Emulator:
+  // static const String baseUrl = 'http://10.0.2.2:8000';
+  
+  // Replace this with your actual Render URL when deployed:
+  // e.g., 'https://smart-closet-api.onrender.com'
+  static const String baseUrl = 'http://10.0.2.2:8000';
+
   final Dio _dio = Dio(BaseOptions(
-    baseUrl: 'http://10.0.2.2:8000', // Default for Android Emulator to host machine
-    connectTimeout: const Duration(seconds: 5),
-    receiveTimeout: const Duration(seconds: 3),
+    baseUrl: baseUrl,
+    connectTimeout: const Duration(seconds: 15),
+    receiveTimeout: const Duration(seconds: 15),
   ));
 
   ApiService() {
@@ -28,6 +35,14 @@ class ApiService {
       'password': password,
     });
     return await _dio.post('/auth/login', data: formData);
+  }
+
+  Future<Response> register(String username, String email, String password) async {
+    return await _dio.post('/auth/register', data: {
+      'username': username,
+      'email': email,
+      'password': password,
+    });
   }
 
   Future<Response> getItems() async {

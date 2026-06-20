@@ -34,6 +34,16 @@ android {
     }
 }
 
+// إضافة هذا الجزء لتجاوز فحص إصدارات AndroidX المزعجة
+configurations.all {
+    resolutionStrategy {
+        force("androidx.activity:activity:1.9.2")
+        force("androidx.activity:activity-ktx:1.9.2")
+        force("androidx.core:core:1.13.1")
+        force("androidx.core:core-ktx:1.13.1")
+    }
+}
+
 kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
