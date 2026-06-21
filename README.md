@@ -48,7 +48,7 @@
 *   **Tech Stack:** Flutter, FastAPI, PostgreSQL, Google Maps API.
 *   **Description:** Logistics platform for water delivery with real-time truck tracking and driver management.
 
-### 💼 Kifah (كفاح)
+### 💼 Kadih (كادح)
 *   **Tech Stack:** Laravel, MySQL, Intelligent Matchmaking Algorithms.
 *   **Description:** AI-powered recruitment platform matching job seekers with employers based on real-time data.
 
