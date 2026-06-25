@@ -8,7 +8,7 @@ class ApiService {
   
   // Replace this with your actual Render URL when deployed:
   // e.g., 'https://smart-closet-api.onrender.com'
-  static const String baseUrl = 'http://10.0.2.2:8000';
+  static const String baseUrl = 'https://smart-closet-api-01dg.onrender.com';
 
   final Dio _dio = Dio(BaseOptions(
     baseUrl: baseUrl,
